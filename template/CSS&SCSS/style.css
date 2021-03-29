@@ -1,1 +1,66 @@
-/* No CSS *//*# sourceMappingURL=style.css.map */
+:root{
+    $themeClr: #53D3DE;
+    $secClr: #1D8B94;
+    $fontclr: #474747;  
+}
+
+
+
+header .h-inner{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+header .h-inner .h-contacts{
+    padding: 15px;
+    display: flex;
+    font-family: Verdana, Geneva, sans-serif;
+    align-items: flex-start;
+}
+header .h-inner .h-contacts p{
+    color: #474747;
+    padding: 8px;
+}
+p::before{
+    font-family: 'icomoon';
+    
+}
+p.number::before{
+    content: "\e942";
+}
+p.mail::before{
+    content: "\e945";
+    left: 20;
+}
+li::before{
+    font-family: 'icomoon';
+}
+li.home::before{
+    content: "\e901";
+}
+li.life::before{
+    content: "\e941";
+}
+li.sign-in::before{
+    content: "\ea13";
+}
+li.edit::before{
+    content: "\e905";
+}
+li.search::before{
+    content: "\e986";
+}
+.h-icons{
+    align-items: flex-end;
+    padding: 20px; 
+}
+.h-icons ul{
+    display: flex;
+}
+.h-icons ul li{
+    list-style-type: none;
+    color: #53D3DE;
+    padding: 0 13px;
+}
+
+
