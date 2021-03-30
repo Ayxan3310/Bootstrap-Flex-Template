@@ -4,6 +4,9 @@
     $fontclr: #474747;  
 }
 
+.transp-btn:hover{
+
+}
 
 
 header .h-inner{
@@ -30,7 +33,6 @@ p.number::before{
 }
 p.mail::before{
     content: "\e945";
-    left: 20;
 }
 li::before{
     font-family: 'icomoon';
@@ -63,4 +65,38 @@ li.search::before{
     padding: 0 13px;
 }
 
+.navbar{
+    background-color: #53D3DE;
+    height: 100px;
+    color: #fff;
+}
+.navbar section.logo{
+    font-family: Georgia, 'Times New Roman', Times, serif; 
+}
+.navbar section.logo h2{
 
+}
+.navbar section.nav-links{
+    width: 65%;
+    color: #fff;
+}
+.navbar section.nav-links ul{
+    
+    display: flex;
+    list-style-type: none;
+}
+.navbar section.nav-links ul li a{ 
+    padding: 27px 15px;
+    text-transform: uppercase;
+    
+}
+.navbar section.nav-links ul .nav-home{
+    background-color: #1D8B94;
+    height: 90px; 
+}
+
+.navbar section.nav-links ul li:hover{
+    background-color: #1D8B94;
+    transition: .4s;
+
+}
