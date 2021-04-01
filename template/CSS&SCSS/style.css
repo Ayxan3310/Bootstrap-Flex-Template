@@ -68,13 +68,9 @@ li.search::before{
 .navbar{
     background-color: #53D3DE;
     height: 100px;
-    color: #fff;
 }
 .navbar section.logo{
     font-family: Georgia, 'Times New Roman', Times, serif; 
-}
-.navbar section.logo h2{
-
 }
 .navbar section.nav-links{
     width: 65%;
@@ -85,7 +81,7 @@ li.search::before{
     display: flex;
     list-style-type: none;
 }
-.navbar section.nav-links ul li a{ 
+.navbar section.nav-links ul li{ 
     padding: 27px 15px;
     text-transform: uppercase;
     
@@ -98,5 +94,28 @@ li.search::before{
 .navbar section.nav-links ul li:hover{
     background-color: #1D8B94;
     transition: .4s;
+}
+.intro{
 
+}
+.intro .i-inner{
+
+}
+.intro .i-inner article{
+
+}
+.intro .i-inner article p{
+
+} 
+.intro .i-inner article p.first-paragraph{
+
+}
+.intro .i-inner article h1{
+
+}
+.intro .i-inner article footer button.btn{
+
+}
+.intro .i-inner article footer button.btn-transp{
+    
 }
