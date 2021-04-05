@@ -4,6 +4,10 @@
     $fontclr: #474747;  
 }
 
+.container{
+    width: 978px;
+    margin: auto;
+}
 .transp-btn:hover{
 
 }
@@ -74,16 +78,20 @@ li.search::before{
 }
 .navbar section.nav-links{
     width: 65%;
-    color: #fff;
+    
 }
 .navbar section.nav-links ul{
-    
     display: flex;
     list-style-type: none;
+
 }
-.navbar section.nav-links ul li{ 
+.navbar section.nav-links ul li{
     padding: 27px 15px;
+}
+.navbar section.nav-links ul li a{ 
     text-transform: uppercase;
+    color: #fff;
+    text-decoration: none;
     
 }
 .navbar section.nav-links ul .nav-home{
@@ -95,27 +103,237 @@ li.search::before{
     background-color: #1D8B94;
     transition: .4s;
 }
+button{
+    transition: .7s;
+}
+.btn-notransp{
+    background-color: #53D3DE;
+    color: #fff;
+    padding: 10px;
+    border: 1px solid #53D3DE;
+}
+.btn-notransp:hover{
+    background-color: transparent;
+    border: 1px solid #fff;
+}
+.btn-transp{
+    background-color: transparent;
+    border: 1px solid #fff;
+    color: #fff;
+    padding: 10px;
+} 
+.btn-transp:hover{
+    border: 1px solid #53D3DE;
+    background-color: #53D3DE;
+}
+.back-transp{
+    background-color: rgba(0, 0, 0, 0.411);
+    width: 100%;
+    height: 500px; 
+}
+.intro .i-inner article button{
+    margin: 20px;
+}
 .intro{
-
+    width: 100%;
+    height: 500px; 
+    padding-bottom: 20px;
 }
 .intro .i-inner{
-
+    width: 100%;
+    min-height: 500px;
+    background-image: url(/img/background-01.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 .intro .i-inner article{
-
+    padding-left: 50px;
+    padding-top: 146px;
+    color: #fff;
 }
 .intro .i-inner article p{
-
+    padding: 10px;
 } 
 .intro .i-inner article p.first-paragraph{
-
+    padding: 10px;
 }
 .intro .i-inner article h1{
-
+    padding: 10px;
 }
-.intro .i-inner article footer button.btn{
-
+.features{
+    background-color: #F4F4F4;
+    height: 600px;
 }
-.intro .i-inner article footer button.btn-transp{
+.features .f-inner{
+    text-align: center;
+}
+.features .f-inner .f-cards{
     
+}
+.features .f-inner .f-header{
+    padding: 40px 0;
+}
+.features .f-inner .f-cards{
+
+}
+.features .f-inner .f-cards article{
+    height: 400px;
+    background-color: #fff;
+    width: 360px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.features .f-inner .f-cards article.post-1::before{
+    position: absolute;
+    content: "\e900";              
+    font-family: 'icomoon';
+    left: 140px;
+    top: 32px;
+    font-size: 70px;
+    color: #B12E52;
+}
+.features .f-inner .f-cards article.post-2{
+    position: relative;
+}
+.features .f-inner .f-cards article.post-3{
+    position: relative;
+}
+.features .f-inner .f-cards article.post-2::before{
+    position: absolute;
+    content: "\e900";              
+    font-family: 'icomoon';
+    left: 140px;
+    top: 32px;
+    font-size: 70px;
+    color: #00B900;
+}
+.features .f-inner .f-cards article.post-3::before{
+    position: absolute;
+    content: "\e900";              
+    font-family: 'icomoon';
+    left: 140px;
+    top: 32px;
+    font-size: 70px;
+    color: #B12E52;
+}
+.features .f-inner .f-cards article button{
+
+}
+.features .f-inner .f-cards article strong{
+    padding: 20px 0;
+    font-size: 40px;
+}
+.features .f-inner .f-cards article h3{
+    padding-top: 140px;
+}
+.site-more{
+    background-color: #1D8B94;
+    height: 110px;
+}
+.site-more .left{
+    padding-left: 110px;
+    padding-top: 30px;
+    color: #fff;
+    font-size: 24px;
+}
+.site-more .right{
+    padding-right: 110px;
+    padding-top: 30px;
+}
+.pretium{
+    height: 600px;
+}
+.pretium .p-inner{
+    text-align: center;
+}
+.pretium .p-inner .pret-header{
+    padding: 30px ;
+}
+.pretium .p-inner .pret-header h3{
+
+}
+.pretium .p-inner .pret-header p{
+    
+}
+.pretium .p-inner .pret-posts article{
+    height: 400px;
+    border: 1px solid gray;
+    width: 340px;
+}
+.pretium .p-inner .pret-posts article.p-post1{
+    position: relative;
+}
+.pretium .p-inner .pret-posts article.p-post2{
+    position: relative;
+}
+.pretium .p-inner .pret-posts article.p-post3{
+    position: relative;
+}
+.pretium .p-inner .pret-posts article.p-post1::before{
+    content: "\e91e";
+    font-family: 'icomoon';
+    position: absolute;
+    color: #53D3DE;
+    font-size: 80px;
+    left: 130px;
+}
+.pretium .p-inner .pret-posts article.p-post2::before{
+    content: "\e9a4";
+    font-family: 'icomoon';
+    position: absolute;
+    color: #53D3DE;
+    font-size: 80px;
+    left: 130px;
+}
+.pretium .p-inner .pret-posts article.p-post3::before{
+    content: "\e9a5";
+    font-family: 'icomoon';
+    position: absolute;
+    color: #53D3DE;
+    font-size: 80px;
+    left: 130px;
+}
+.pretium .p-inner .pret-posts article p{
+    padding: 40px 11px;
+
+}
+.pretium .p-inner .pret-posts article h3{
+    padding-top: 140px;
+}
+.t-header{
+    text-align: center;
+
+}
+section.photos{
+    text-align: center;
+}
+.t-inner footer button{
+    text-align: center;
+}
+.person .p-inner{
+    background-image: url(/img/background-02.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 350px;
+    color: #fff;
+}
+.person .p-inner figure.pers-header img{
+    border-radius: 50%;
+    padding: 20px 0;
+}
+.person .p-inner{
+    text-align: center;
+}
+.per-back-transp{
+    background-color: rgba(0, 0, 0, 0.411);
+    width: 100%;
+    height: 350px; 
+}
+.person .p-inner article{
+    width: 800px;
+    padding-left: 325px;
 }
