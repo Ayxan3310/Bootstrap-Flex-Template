@@ -337,3 +337,19 @@ section.photos{
     width: 800px;
     padding-left: 325px;
 }
+
+.inf-inner{
+    font-size: 14px;
+}
+.number::before{
+    font-family: 'icomoon';
+}
+.email::before{
+    font-family: 'icomoon';
+}
+.time::before{
+    font-family: 'icomoon';
+}
+.location::before{
+    font-family: 'icomoon';
+}
