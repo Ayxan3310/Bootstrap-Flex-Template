@@ -1,17 +1,78 @@
-:root{
-    $themeClr: #53D3DE;
-    $secClr: #1D8B94;
-    $fontclr: #474747;  
+.dropdown{
+    position: relative;
+}
+.dropdown:hover .dropdown-content{
+    display: block;
+}
+.dropdown-content{
+    display: none;
+    position: absolute;
+    width: 185px;
+    list-style-type: none;
+    top: 90px;
+    left: -35px;
 }
 
-.container{
-    width: 978px;
-    margin: auto;
+.dropdown-content li{
+    background-color: #53d3de98;
+    height: 5px;
+    
 }
-.transp-btn:hover{
+/* dropdown ends here */
 
+
+button{
+    transition: .7s;
+}
+.btn-notransp{
+    background-color: #53D3DE;
+    color: #fff;
+    padding: 10px;
+    border: 1px solid #53D3DE;
+}
+.btn-notransp:hover{
+    background-color: transparent;
+    border: 1px solid #fff;
+}
+.btn-transp{
+    background-color: transparent;
+    border: 1px solid #fff;
+    color: #fff;
+    padding: 10px;
+} 
+.btn-transp:hover{
+    border: 1px solid #53D3DE;
+    background-color: #53D3DE;
+}
+.back-transp{
+    background-color: rgba(0, 0, 0, 0.411);
+    width: 100%;
+    height: 500px; 
+}
+/* buttons or backtransp */
+.up{
+    background-color: #1D8B94;
+    color: #fff;
+    position: fixed;
+    padding: 10px;
+    bottom: 20px;
+    right: 20px;
+    width: 36px;
+    height: 36px;
+    transition: .5s;
+}
+.up::before{
+    content: "\ea41";
+    font-family: 'icomoon';
+    position: absolute;
+    color: #fff;
+}
+.up:hover{
+    background-color: #53D3DE;
+    cursor: pointer;
 }
 
+/* up ends here */
 
 header .h-inner{
     display: flex;
@@ -28,11 +89,13 @@ header .h-inner .h-contacts p{
     color: #474747;
     padding: 8px;
 }
+/* left side header  */
+
 p::before{
     font-family: 'icomoon';
     
 }
-p.number::before{
+p.our-number::before{
     content: "\e942";
 }
 p.mail::before{
@@ -68,69 +131,43 @@ li.search::before{
     color: #53D3DE;
     padding: 0 13px;
 }
-
+/* right side header  */
 .navbar{
     background-color: #53D3DE;
     height: 100px;
+    width: 100%;
+    
 }
 .navbar section.logo{
     font-family: Georgia, 'Times New Roman', Times, serif; 
+    color: #fff;
 }
 .navbar section.nav-links{
     width: 65%;
-    
 }
-.navbar section.nav-links ul{
+.navbar section.nav-links ul.menu{
     display: flex;
     list-style-type: none;
-
 }
-.navbar section.nav-links ul li{
+.navbar section.nav-links ul.menu li{
     padding: 27px 15px;
 }
-.navbar section.nav-links ul li a{ 
+.navbar section.nav-links ul.menu li a{ 
     text-transform: uppercase;
     color: #fff;
     text-decoration: none;
-    
 }
-.navbar section.nav-links ul .nav-home{
+.navbar section.nav-links ul.menu .nav-home{
     background-color: #1D8B94;
     height: 90px; 
 }
 
-.navbar section.nav-links ul li:hover{
+.navbar section.nav-links ul.menu li:hover{
     background-color: #1D8B94;
     transition: .4s;
 }
-button{
-    transition: .7s;
-}
-.btn-notransp{
-    background-color: #53D3DE;
-    color: #fff;
-    padding: 10px;
-    border: 1px solid #53D3DE;
-}
-.btn-notransp:hover{
-    background-color: transparent;
-    border: 1px solid #fff;
-}
-.btn-transp{
-    background-color: transparent;
-    border: 1px solid #fff;
-    color: #fff;
-    padding: 10px;
-} 
-.btn-transp:hover{
-    border: 1px solid #53D3DE;
-    background-color: #53D3DE;
-}
-.back-transp{
-    background-color: rgba(0, 0, 0, 0.411);
-    width: 100%;
-    height: 500px; 
-}
+/* navbar ends here  */
+
 .intro .i-inner article button{
     margin: 20px;
 }
@@ -161,36 +198,49 @@ button{
 .intro .i-inner article h1{
     padding: 10px;
 }
+/* intro ends here  */
 .features{
-    background-color: #F4F4F4;
     height: 600px;
+    width: 100%;
+    margin-bottom: 20px;
+    background-color: #F4F4F4;
 }
 .features .f-inner{
     text-align: center;
 }
-.features .f-inner .f-cards{
-    
-}
+
 .features .f-inner .f-header{
     padding: 40px 0;
 }
-.features .f-inner .f-cards{
-
+.features .f-inner .f-cards article button{
+    background-color: #53D3DE;
+    color: #fff;
+    padding: 10px;
+    border: 1px solid #53D3DE;
 }
+.features .f-inner .f-cards article button:hover{
+    background-color: transparent;
+    border: 1px solid rgb(0, 0, 0);
+    color: #000;
+}
+.features .f-inner .f-cards article p{
+    padding: 0 20px;
+}
+
 .features .f-inner .f-cards article{
     height: 400px;
     background-color: #fff;
     width: 360px;
-    display: flex;
-    flex-direction: column;
     position: relative;
+    transition: .7s;
+    padding-bottom: 20px;
 }
 
 .features .f-inner .f-cards article.post-1::before{
     position: absolute;
     content: "\e900";              
     font-family: 'icomoon';
-    left: 140px;
+    left: 100px;
     top: 32px;
     font-size: 70px;
     color: #B12E52;
@@ -205,7 +255,7 @@ button{
     position: absolute;
     content: "\e900";              
     font-family: 'icomoon';
-    left: 140px;
+    left: 100px;
     top: 32px;
     font-size: 70px;
     color: #00B900;
@@ -214,24 +264,24 @@ button{
     position: absolute;
     content: "\e900";              
     font-family: 'icomoon';
-    left: 140px;
+    left: 100px;
     top: 32px;
     font-size: 70px;
-    color: #B12E52;
-}
-.features .f-inner .f-cards article button{
-
+    color: #359AFF;
 }
 .features .f-inner .f-cards article strong{
     padding: 20px 0;
     font-size: 40px;
+    color: #1D8B94;
 }
 .features .f-inner .f-cards article h3{
     padding-top: 140px;
 }
+/* features ends here  */
 .site-more{
     background-color: #1D8B94;
-    height: 110px;
+    height: 120px;
+    padding-top: 20px;
 }
 .site-more .left{
     padding-left: 110px;
@@ -243,6 +293,7 @@ button{
     padding-right: 110px;
     padding-top: 30px;
 }
+/* site-more ends here  */
 .pretium{
     height: 600px;
 }
@@ -251,12 +302,6 @@ button{
 }
 .pretium .p-inner .pret-header{
     padding: 30px ;
-}
-.pretium .p-inner .pret-header h3{
-
-}
-.pretium .p-inner .pret-header p{
-    
 }
 .pretium .p-inner .pret-posts article{
     height: 400px;
@@ -272,13 +317,24 @@ button{
 .pretium .p-inner .pret-posts article.p-post3{
     position: relative;
 }
+.pretium .p-inner .pret-posts article button{
+    background-color: #53D3DE;
+    color: #fff;
+    padding: 10px;
+    border: 1px solid #53D3DE;
+}
+.pretium .p-inner .pret-posts article button:hover{
+    background-color: transparent;
+    border: 1px solid rgb(0, 0, 0);
+    color: #000;
+}
 .pretium .p-inner .pret-posts article.p-post1::before{
     content: "\e91e";
     font-family: 'icomoon';
     position: absolute;
     color: #53D3DE;
     font-size: 80px;
-    left: 130px;
+    left: 100px;
 }
 .pretium .p-inner .pret-posts article.p-post2::before{
     content: "\e9a4";
@@ -286,7 +342,7 @@ button{
     position: absolute;
     color: #53D3DE;
     font-size: 80px;
-    left: 130px;
+    left: 100px;
 }
 .pretium .p-inner .pret-posts article.p-post3::before{
     content: "\e9a5";
@@ -294,7 +350,7 @@ button{
     position: absolute;
     color: #53D3DE;
     font-size: 80px;
-    left: 130px;
+    left: 100px;
 }
 .pretium .p-inner .pret-posts article p{
     padding: 40px 11px;
@@ -303,9 +359,9 @@ button{
 .pretium .p-inner .pret-posts article h3{
     padding-top: 140px;
 }
+/* pretium ends here  */
 .t-header{
     text-align: center;
-
 }
 section.photos{
     text-align: center;
@@ -313,6 +369,18 @@ section.photos{
 .t-inner footer button{
     text-align: center;
 }
+.t-inner footer button{
+    background-color: #53D3DE;
+    color: #fff;
+    padding: 10px;
+    border: 1px solid #53D3DE;
+}
+.t-inner footer button:hover{
+    background-color: transparent;
+    border: 1px solid rgb(0, 0, 0);
+    color: #000;
+}
+/* tellus ends here  */
 .person .p-inner{
     background-image: url(/img/background-02.jpg);
     background-position: center;
@@ -337,19 +405,170 @@ section.photos{
     width: 800px;
     padding-left: 325px;
 }
-
+/* person ends here  */
 .inf-inner{
     font-size: 14px;
 }
+.number{
+    position: relative;
+}
 .number::before{
     font-family: 'icomoon';
+    position: absolute;
+    left: -28px;
+    font-size: 20px;
+    color: #53D3DE;
+    content: "\e942";
+}
+.email{
+    position: relative;
 }
 .email::before{
     font-family: 'icomoon';
+    position: absolute;
+    left: -28px;
+    font-size: 20px;
+    color: #53D3DE;
+    content: "\e945";
+}
+.time{
+    position: relative;
 }
 .time::before{
     font-family: 'icomoon';
+    content: "\e94f";
+    position: absolute;
+    left: -28px;
+    font-size: 20px;
+    color: #53D3DE;
+}
+.location{
+    position: relative;
 }
 .location::before{
+    content: "\e947";
     font-family: 'icomoon';
+    position: absolute;
+    left: -28px;
+    font-size: 20px;
+    color: #53D3DE;
+}
+
+/* site-info ends here  */
+
+.site-bottom .fsb-upp{
+    background-color: #202020;
+    padding: 40px;
+}
+.site-bottom .fsb-upp article{
+    height: 300px;
+    width: 300px;
+}
+.site-bottom .fsb-upp article p{
+    color: #8FA7AF;
+}
+.site-bottom .fsb-upp .fsb-paragraths p{
+    margin-bottom: 40px;
+}
+.site-bottom .fsb-upp article a{
+    color: #53D3DE;
+}
+.site-bottom .fsb-upp article time{
+    color: #8FA7AF;
+    padding: 10px 0;
+}
+.site-bottom .fsb-upp article button{
+    background-color: #53D3DE;
+    color: #fff;
+    padding: 10px;
+    border: 1px solid #53D3DE;
+}
+.site-bottom .fsb-upp article h6{
+    color: #fff;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.site-bottom .fsb-upp .fsb-links ul li{
+    padding: 10px 0;
+    border-bottom: 1px solid #8FA7AF;
+    list-style-type: none;
+}
+.site-bottom .fsb-upp .fsb-paragraths ul{
+    display: flex;
+    justify-content: space-between;
+}
+.site-bottom .fsb-upp .fsb-paragraths ul{
+    list-style-type: none;
+}
+.site-bottom .fsb-upp .fsb-paragraths ul li{
+    font-family: 'icomoon';
+    color: #fff;
+    position: absolute;
+    background-color: #161616;
+    padding: 8px;
+    bottom: 20px;
+    right: 20px;
+    width: 36px;
+    height: 36px;
+}
+.site-bottom .fsb-upp .fsb-paragraths ul li.facebook:hover{
+    background-color: rgb(29, 63, 77);
+}
+.site-bottom .fsb-upp .fsb-paragraths ul li.facebook{
+    position: relative;
+    transition: .5s;
+    cursor: pointer;
+}
+.site-bottom .fsb-upp .fsb-paragraths ul li.facebook::before{
+    content: "\ea91";
+}
+
+.site-bottom .fsb-upp .fsb-paragraths ul li.google:hover{
+    background-color: rgba(255, 68, 0, 0.74);
+}
+.site-bottom .fsb-upp .fsb-paragraths ul li.google{
+    position: relative;
+    transition: .5s;
+    cursor: pointer;
+}
+.site-bottom .fsb-upp .fsb-paragraths ul li.google::before{
+    content: "\ea88";
+}
+
+.site-bottom .fsb-upp .fsb-paragraths ul li.vk:hover{
+    background-color: rgb(0, 90, 126);
+}
+.site-bottom .fsb-upp .fsb-paragraths ul li.vk{
+    position: relative;
+    cursor: pointer;
+    transition: .5s;
+}
+.site-bottom .fsb-upp .fsb-paragraths ul li.vk::before{
+    content: "\ea98";
+}
+
+.site-bottom .fsb-upp .fsb-paragraths ul li.linkedin:hover{
+    background-color: rgba(64, 224, 208, 0.74);
+}
+.site-bottom .fsb-upp .fsb-paragraths ul li.linkedin{
+    position: relative;
+    cursor: pointer;
+    transition: .5s;
+}
+.site-bottom .fsb-upp .fsb-paragraths ul li.linkedin::before{
+    content: "\eac9";
+}
+
+.site-bottom .fsb-upp .fsb-minform input{
+    padding: 10px;
+    color: #202020;
+    background-color: #161616;
+
+}
+
+.fsb-und{
+    background-color: #161616;
+    height: 60px;
+    color: #8fa7afcc;
+    padding: 10px 0;
 }

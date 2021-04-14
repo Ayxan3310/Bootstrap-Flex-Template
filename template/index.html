@@ -13,24 +13,24 @@
     <link rel="stylesheet" href="./CSS&SCSS/icons.css">
 </head>
 <body>
-    <header>
+    <header id="top">
         <div class="container">
-            <div class="h-inner  ">
-                <section class="h-contacts ">
-                    <p class="number col-sm-6  col-lg-7">
+            <div class="h-inner flex-wrap">
+                <section class="h-contacts">
+                    <p class="our-number">
                         +00 (123) 456 7890
                     </p>
-                    <p class="mail col-sm-6 col-lg-7">
+                    <p class="mail">
                         INFO@DOMAIN.COM
                     </p>
                 </section>
                 <section class="h-icons ">
                     <ul >
-                        <li class="home col-sm-3  col-lg-2" ><a href=""></a></li>
-                        <li class="life col-sm-3 col-lg-2"><a href=""></a></li>
-                        <li class="sign-in col-sm-3 col-lg-2" ><a href=""></a></li>
-                        <li class="edit col-sm-3 col-lg-2" ><a href=""></a></li>
-                        <li class="search col-sm-3 col-lg-2" ><a href=""></a></li>
+                        <li class="home" ><a href=""></a></li>
+                        <li class="life"><a href=""></a></li>
+                        <li class="sign-in" ><a href=""></a></li>
+                        <li class="edit" ><a href=""></a></li>
+                        <li class="search" ><a href=""></a></li>
                     </ul>
                 </section>
             </div>
@@ -45,10 +45,27 @@
                 </h2>
             </section>
             <section class="nav-links">
-                <ul>
+                <ul class="menu">
                     <li class="nav-home"><a href="">home</a></li>
-                    <li><a href="">pages</a></li>
-                    <li><a href="">dropdown</a></li>
+                    <li class="dropdown">
+                        <a  href="">pages</a>
+                        <ul class="dropdown-content">
+                            <li><a href="">Gallery</a></li>
+                            <li><a href="">Full Width</a></li>
+                            <li><a href="">Slidebar left</a></li>
+                            <li><a href="">Slidebar right</a></li>
+                            <li><a href="">Basic Grid</a></li>
+                            <li><a href="">Font Icons</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="">dropdown</a>
+                        <ul class="dropdown-content">
+                            <li><a href="">level 2</a></li>
+                            <li><a href="">level 2 +</a></li>
+                            <li><a href="">level 2 +</a></li>
+                        </ul>
+                    </li>
                     <li><a href="">link text</a></li>
                     <li><a href="">link text</a></li>
                     <li><a href="">link text</a></li>
@@ -58,217 +75,326 @@
         </div>
     </nav>
     <!-- navbar ends here -->
-    <div class="intro">
-        <div class="back-transp">
-                <div class="i-inner">
-                    <div class="back-transp">
-                        <div class="container">
-                            <article>
-                                <p class="first-paragraph" >
-                                    EU LEO CURABITUR ELEIFEND SAPIEN
-                                </p>
-                                <h1>
-                                    Sed Eros Nullam Quis Ligula
-                                </h1>
-                                <p>
-                                    Elementum lectus varius aliquet quisque fringilla est in porttitor
-                                </p>
-                                <footer>
-                                    <button class="btn-notransp">
-                                        ULTRICIES DUI ORCI
-                                    </button>
-                                    <button class="btn-transp">
-                                        MOLLIS LIBERO QUIS
-                                    </button>
-                                </footer>
-                            </article>
+    <main>
+        <div class="intro">
+            <div class="back-transp">
+                    <div class="i-inner">
+                        <div class="back-transp">
+                            <div class="container">
+                                <article>
+                                    <p class="first-paragraph" >
+                                        EU LEO CURABITUR ELEIFEND SAPIEN
+                                    </p>
+                                    <h1>
+                                        Sed Eros Nullam Quis Ligula
+                                    </h1>
+                                    <p>
+                                        Elementum lectus varius aliquet quisque fringilla est in porttitor
+                                    </p>
+                                    <footer>
+                                        <button class="btn-notransp">
+                                            ULTRICIES DUI ORCI
+                                        </button>
+                                        <button class="btn-transp">
+                                            MOLLIS LIBERO QUIS
+                                        </button>
+                                    </footer>
+                                </article>
+                            </div>
                         </div>
-                    </div>
-            </div>
-        </div>
-    </div>
-    <!-- intro ends here -->
-    <div class="features">
-        <div class="f-inner">
-            <div class="container">
-                <header class="f-header">
-                    <h3>Sagittis Lacus Neque Ut Lorem Integer</h3>
-                    <p>Elementum nisi ac volutpat vestibulum enim mi tincidunt eros</p>
-                </header>
-                <section class="f-cards d-flex justify-content-lg-between  justify-content-md-center">
-                    <article class="post-1">
-                        <h3>CONDIMENTUM</h3>
-                        <p>
-                            Sed porttitor justo magna odio sed lacus nunc consequat sem
-                             vel metus imperdiet lacinia suspendisse aliquet mi sed
-                        </p>
-                        <strong>80</strong>
-                        <button class="btn-notransp">
-                            DETAILS
-                        </button>
-                    </article>
-                    <article class="post-2">
-                        <h3>SUSCIPIT</h3>
-                        <p>
-                            SJusto in tortor quis dui in purus pede luctus eget
-                            condimentum ac bibendum in justo nam condimentum congue risus
-                        </p>
-                        <strong>100</strong>
-                        <button class="btn-notransp">
-                            DETAILS
-                        </button>
-                    </article>
-                    <article class="post-3">
-                        <h3>DIGNISSIM</h3>
-                        <p>
-                            Aliquam auctor nisl nec diam ornare nam molestie massa
-                            quis pede vestibulum fringilla risus in metus nullam egestas
-                        </p>
-                        <strong>125</strong>
-                        <button class="btn-notransp">
-                            DETAILS
-                        </button>
-                    </article>
-                </section>
-            </div>
-        </div>
-    </div>
-
-    <div class="site-more d-flex justify-content-lg-between">
-        <section class="left">
-            <p>
-                Velit Tristique Sem Vehicula
-                Laoreet Nullam Elementum
-            </p>
-        </section>
-        <section class="right">
-            <button class="btn-notransp">
-                IPSUM PHARETRA LEO
-            </button>
-        </section>
-    </div>
-    <!-- site-more ends here  -->
-    <div class="pretium">
-        <div class="container">
-            <div class="p-inner">
-                <section class="pret-header">
-                    <h3>Augue Pretium Felis Faucibus Porttitor</h3>
-                    <p>Metus nisl vitae ipsum integer vestibulum suspendisse potenti</p>
-                </section>
-                <section class="pret-posts d-flex justify-content-lg-between">
-                    <article class="p-post1">
-                        <h3>Class Aptent Taciti</h3>
-                        <p> 
-                            Sociosqu ad litora torquent per 
-                            conubia nostra per inceptos himenaeos nullam tempus erat […]
-                        </p>
-                        <button class="btn-notransp ">
-                            READ MORE
-                        </button>
-                    </article>
-                    <article class="p-post2">
-                        <h3>Id Tortor Etiam Orci</h3>
-                        <p>
-                            Justo lobortis in consequat ut ornare 
-                            vel tellus nulla elementum velit pretium ultricies […]
-                        </p>
-                        <button class="btn-notransp">
-                            READ MORE
-                        </button>
-                    </article>
-                    <article class="p-post3">
-                        <h3>Tristique Nibh Turpis</h3>
-                        <p>
-                            Fermentum dui sit amet consequat felis 
-                            arcu quis pede curabitur elit lacus consectetuer vel […]
-                        </p>
-                        <button class="btn-notransp">
-                            READ MORE
-                        </button>
-                    </article>
-                </section>
-            </div>
-        </div>
-    </div>
-    <!-- pretium ends here -->
-    <div class="tellus">
-        <div class="container">
-            <div class="t-inner">
-                <header class="t-header py-5">
-                    <h3>
-                        Vestibulum Nec Pharetra Eu Nisl
-                    </h3>
-                    <p>
-                        Sed auctor purus vel aliquet 
-                        dignissim lectus nunc semper lorem
-                    </p>
-                </header>
-                <section class="photos d-flex justify-content-lg-between py-3">
-                    <article>
-                        <figure><img src="./img/01.jpg" alt=""></figure>
-                        <p>PORTA FACILISIS</p>
-                    </article>
-                    <article>
-                        <figure><img src="./img/02.jpg" alt=""></figure>
-                        <p>TELLUS LECTUS NEC</p>
-                    </article>
-                    <article>
-                        <figure><img src="./img/03.jpg" alt=""></figure>
-                        <p>PEDE SUSPENDISSE</p>
-                    </article>
-                </section>
-                <footer class="d-flex justify-content-center py-5">
-                    <button class="btn-notransp ">TORTOR MOLESTIE</button>
-                </footer>
-            </div>
-        </div>
-    </div>
-    <!-- tellus ends here  -->
-    <div class="person">
-        <div class="p-inner">
-            <div class="per-back-transp">
-                <div class="container">
-                    <article >
-                        <figure class="pers-header ">
-                            <img src="./img/04.jpg" alt="ppl">
-                        </figure>
-                        <p>
-                            porta volutpat sit amet scelerisque sit
-                            amet leo morbi sem magna viverra
-                            quis sollicitudin quis consectetuer
-                            quis magna integer consectetuer
-                            tellus sed dui nullam.
-                        </p>
-                        <h3>A. Doe</h3>
-                        <h5>justo massa adipiscing</h5>
-                    </article>
                 </div>
             </div>
         </div>
-    </div>
-    <!-- person ends here  -->
-    <div class="info-links ">
-        <div class="container">
-            <div class="inf-inner justify-content-lg-between d-flex py-4">
-                <section class="number">
-                    <h6>Give us a call:</h6>
-                    <p>+00 (123) 456 7890</p>
-                </section>
-                <section class="email">
-                    <h6>Send us a mail:</h6>
-                    <p>support@domain.com</p>
-                </section>
-                <section class="time">
-                    <h6>Monday - Saturday:</h6>
-                    <p>08.00am - 18.00pm</p>
-                </section>
-                <section class="location">
-                    <h6>Come visit us:</h6>
-                    <p>Directions to our location</p>
-                </section>
+        <!-- intro ends here -->
+        <div class="features">
+            <div class="f-inner py-1">
+                <div class="container">
+                    <header class="f-header">
+                        <h3>Sagittis Lacus Neque Ut Lorem Integer</h3>
+                        <p>Elementum nisi ac volutpat vestibulum enim mi tincidunt eros</p>
+                    </header>
+                    <section class="f-cards d-flex justify-content-between flex-wrap ">
+                        <div class="col-lg-3 col-sm-12 d-flex justify-content-sm-center ">
+                            <article class="post-1 d-flex flex-column">
+                                <h3>CONDIMENTUM</h3>
+                                <p>
+                                    Sed porttitor justo magna odio sed lacus nunc consequat sem
+                                     vel metus imperdiet lacinia suspendisse aliquet mi sed
+                                </p>
+                                <strong>80</strong>
+                                <button class="btn-notransp">
+                                    DETAILS
+                                </button>
+                            </article>
+                        </div>
+                        <div class="col-lg-3 col-sm-12 d-flex justify-content-sm-center">
+                            <article class="post-2 d-flex flex-column">
+                                <h3>SUSCIPIT</h3>
+                                <p>
+                                    SJusto in tortor quis dui in purus pede luctus eget
+                                    condimentum ac bibendum in justo nam condimentum congue risus
+                                </p>
+                                <strong>100</strong>
+                                <button class="btn-notransp">
+                                    DETAILS
+                                </button>
+                            </article>
+                        </div>
+                        <div class="col-lg-3 col-sm-12 d-flex justify-content-sm-center">
+                            <article class="post-3 d-flex flex-column">
+                                <h3>DIGNISSIM</h3>
+                                <p>
+                                    Aliquam auctor nisl nec diam ornare nam molestie massa
+                                    quis pede vestibulum fringilla risus in metus nullam egestas
+                                </p>
+                                <strong>125</strong>
+                                <button class="btn-notransp">
+                                    DETAILS
+                                </button>
+                            </article>
+                        </div>
+                    </section>
+                </div>
             </div>
         </div>
-
-    </div>
+        <!-- intro ends here -->
+        <div class="site-more d-flex justify-content-md-between  py-3  flex-wrap py-1">
+            <section class="left d-flex">
+                <p>
+                    Velit Tristique Sem Vehicula
+                    Laoreet Nullam Elementum
+                </p>
+            </section>
+            <section class="right " >
+                <button class="btn-notransp">
+                    IPSUM PHARETRA LEO
+                </button>
+            </section>
+        </div>
+        <!-- intro ends here -->
+        <div class="pretium">
+            <div class="container">
+                <div class="p-inner">
+                    <section class="pret-header">
+                        <h3>Augue Pretium Felis Faucibus Porttitor</h3>
+                        <p>Metus nisl vitae ipsum integer vestibulum suspendisse potenti</p>
+                    </section>
+                    <section class="pret-posts d-flex justify-content-lg-between  py-3  flex-wrap">
+                        <div class="col-lg-3 col-sm-12 d-flex justify-content-center">
+                            <article class="p-post1">
+                                <h3>Class Aptent Taciti</h3>
+                                <p>
+                                    Sociosqu ad litora torquent per
+                                    conubia nostra per inceptos himenaeos nullam tempus erat […]
+                                </p>
+                                <button class="btn-notransp ">
+                                    READ MORE
+                                </button>
+                            </article>
+                        </div>
+                        <div class="col-lg-3 col-sm-12 d-flex justify-content-center">
+                            <article class="p-post2">
+                                <h3>Id Tortor Etiam Orci</h3>
+                                <p>
+                                    Justo lobortis in consequat ut ornare
+                                    vel tellus nulla elementum velit pretium ultricies […]
+                                </p>
+                                <button class="btn-notransp">
+                                    READ MORE
+                                </button>
+                            </article>
+                        </div>
+                        <div class="col-lg-3 col-sm-12 d-flex justify-content-center">
+                            <article class="p-post3">
+                                <h3>Tristique Nibh Turpis</h3>
+                                <p>
+                                    Fermentum dui sit amet consequat felis
+                                    arcu quis pede curabitur elit lacus consectetuer vel […]
+                                </p>
+                                <button class="btn-notransp">
+                                    READ MORE
+                                </button>
+                            </article>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+        <!-- pretium ends here -->
+        <div class="tellus ">
+            <div class="container">
+                <div class="t-inner d-flex    flex-column">
+                    <header class="t-header py-5 ">
+                        <h3>
+                            Vestibulum Nec Pharetra Eu Nisl
+                        </h3>
+                        <p>
+                            Sed auctor purus vel aliquet
+                            dignissim lectus nunc semper lorem
+                        </p>
+                    </header>
+                    <section class="photos d-flex justify-content-lg-between  py-3  flex-wrap">
+                        <div class="col-lg-3 col-sm-12 d-flex justify-content-center">
+                            <article>
+                                <figure><img src="./img/01.jpg" alt=""></figure>
+                                <p>PORTA FACILISIS</p>
+                            </article>
+                        </div>
+                        <div class="col-lg-3 col-sm-12 d-flex justify-content-center">
+                            <article>
+                                <figure><img src="./img/02.jpg" alt=""></figure>
+                                <p>TELLUS LECTUS NEC</p>
+                            </article>
+                        </div>
+                        <div class="col-lg-3 col-sm-12 d-flex justify-content-center">
+                            <article>
+                                <figure><img src="./img/03.jpg" alt=""></figure>
+                                <p>PEDE SUSPENDISSE</p>
+                            </article>
+                        </div>
+                    </section>
+                    <footer class="d-flex justify-content-center py-5">
+                        <button class="btn-notransp ">TORTOR MOLESTIE</button>
+                    </footer>
+                </div>
+            </div>
+        </div>
+        <!-- tellus ends here -->
+        <div class="person">
+            <div class="p-inner">
+                <div class="per-back-transp">
+                    <div class="container">
+                        <article >
+                            <figure class="pers-header ">
+                                <img src="./img/04.jpg" alt="ppl">
+                            </figure>
+                            <p>
+                                porta volutpat sit amet scelerisque sit
+                                amet leo morbi sem magna viverra
+                                quis sollicitudin quis consectetuer
+                                quis magna integer consectetuer
+                                tellus sed dui nullam.
+                            </p>
+                            <h3>A. Doe</h3>
+                            <h5>justo massa adipiscing</h5>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- person ends here -->
+        <div class="info-links py-4">
+            <div class="container">
+                <div class="inf-inner justify-content-lg-between d-flex py-4">
+                    <section class="number">
+                        <h6>Give us a call:</h6>
+                        <p>+00 (123) 456 7890</p>
+                    </section>
+                    <section class="email">
+                        <h6>Send us a mail:</h6>
+                        <p>support@domain.com</p>
+                    </section>
+                    <section class="time">
+                        <h6>Monday - Saturday:</h6>
+                        <p>08.00am - 18.00pm</p>
+                    </section>
+                    <section class="location">
+                        <h6>Come visit us:</h6>
+                        <p>Directions to our location</p>
+                    </section>
+                </div>
+            </div>
+        </div>
+        <!-- info-links ends here -->
+    </main>
+    <!-- main ends here  -->
+    <footer class="site-bottom">
+            <div class="fsb-upp d-flex justify-content-lg-between">
+                <article class="fsb-paragraths d-flex flex-column">
+                    <h6>A Convallis Ultricies</h6>
+                    <p>
+                        Luctus et dolor nulla 
+                        facilisi fusce 
+                        sit amet magna non odio 
+                        molestie egestas nullam id odio.
+                    </p>
+                    <p>
+                        Quis risus placerat aliquam nunc 
+                        nec nunc morbi vel nisi sit amet 
+                        orci adipiscing pharetra
+                    </p>
+                    <ul>
+                        <li class="facebook"><a href=""></a></li>
+                        <li class="google"><a href=""></a></li>
+                        <li class="linkedin"><a href=""></a></li>
+                        <li class="twitter"><a href=""></a></li>
+                        <li class="vk"><a href=""></a></li>
+                    </ul>
+                </article>
+                <article class="fsb-lorem d-flex flex-column ">
+                    <h6>Mauris Lorem Curabitur</h6>
+                    <a href="">Semper lacus id 
+                        nibh etiam iaculis 
+                        viverra pede proin 
+                        laoreet dolor ut nunc…
+                    </a>
+                    <time class="py-4">
+                        Friday, 6th April 2045
+                    </time>
+                    <a href="">
+                        Donec turpis aliquam sapien 
+                        est sodales id elementum at 
+                        molestie in felis class… 
+                    </a>
+                    <time class="py-4">
+                        Thursday, 5th April 2045
+                    </time>
+                </article>
+                <article class="fsb-links d-flex flex-column">
+                    <h6>Eget Mauris Egestas</h6>
+                    <ul>
+                        <li><a href="">Aptent taciti sociosqu ad</a></li>
+                        <li><a href="">Litora torquent per conubia</a></li>
+                        <li><a href="">Nostra per inceptos himenaeos</a></li>
+                        <li><a href="">Nam semper ipsum et purus</a></li>
+                        <li><a href="">Suspendisse sed quam aliquam</a></li>
+                    </ul>
+                </article>
+                <article class="fsb-minform d-flex flex-column ">
+                    <h6>Volutpat Quisque Mauris</h6>
+                    <p>
+                        Viverra etiam dictum euismod 
+                        lectus vestibulum tincidunt 
+                        erat vel molestie.
+                    </p>
+                    <form>
+                        <input type="text" placeholder="Name">
+                        <input type="email" placeholder="Email">
+                    </form>
+                    <button class="fsb-button">
+                        SUBMIT
+                    </button>
+                </article>
+            </div>
+            <div class="fsb-und ">
+                <div class="container">
+                    <div class="und-inner d-flex justify-content-between">
+                        <section>
+                            <p>
+                                Copyright © 2018 - All Rights Reserved - Domain Name
+                            </p>
+                        </section>
+                        <section>
+                            <p>
+                                Template by OS Templates
+                            </p>
+                        </section>
+                    </div>
+                </div>               
+            </div>
+    </footer>
+    <!-- site-bottom ends here -->
+    
+    <section><a class="up" href="#top"></a></section>
 </body>
 </html>
